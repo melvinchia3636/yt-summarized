@@ -1,23 +1,15 @@
-The video discusses five web design trends that are expected to be popular in 2024. Here is a detailed summary of each trend:
+The video is a tutorial on writing clean code in React,JS by a senior React developer. The developer shares their 8-year experience in writing clean code and provides step-by-step guidance on how to approach building a React application.
 
-**Trend 1: Handmade Illustrations**
+The video starts with a simple React application that contains a profile page with a list of user IDs. The task is to create a new page that will render when a user clicks on one of the IDs.
 
-The video predicts that handmade illustrations will become more unique and valuable in the future web design landscape, particularly with the rise of AI-generated content. Handdrawn animations can add a human touch to a website, making it more relatable and interesting. The video showcases examples of websites that have successfully incorporated handmade illustrations, such as Procreate Dreams, a website about creating animations using iPads.
+The developer creates a new folder called "pages" and inside it, a new file called "ProfilePage.tsx". The file is initialized with a `div` element and a class name "container" with styles to set a max-width and horizontal alignment.
 
-**Trend 2: 3D Web Design**
+Instead of keeping the styles in the ProfilePage component, the developer extracts them into a separate component called "PageLayout.tsx" in a new folder called "components". This component is a custom component that wraps the children with a div and applies the styles. This approach makes the code more scalable and reusable.
 
-The video highlights the growing trend of 3D web design, which is becoming more accessible to designers thanks to tools like Spline Design. This platform allows users to create 3D elements and export them as iframes or scripts, making it easy to integrate into websites. The video showcases examples of websites that have successfully incorporated 3D effects, making them more engaging and polished.
+The developer then creates a new folder called "hooks" and inside it, a file called "useFetchProfile.ts" that contains a custom hook responsible for fetching the profile data based on the profile ID. This hook is reusable and can be used in other components that need to fetch profile data.
 
-**Trend 3: AI-Generated Artwork**
+The developer then creates a new component called "ProfileData.tsx" that takes the profile data as a prop and is responsible for displaying the profile data. This component can be further divided into smaller sub-components, such as an "Avatar" component that displays the user's profile picture.
 
-The video discusses the increasing use of AI-generated artwork from platforms like DALL-E and Midjourney. While these designs may not always be realistic, they can be used for inspiration or as large hero sections on a website. The video notes that with the abundance of tutorials and guides on customizing prompts, AI-generated art is becoming more reliable for web design.
+Throughout the video, the developer emphasizes the importance of separating concerns and responsibilities between components. Page components should only be responsible for rendering the overall layout, while feature components handle specific features, and UI components handle rendering individual UI elements.
 
-**Trend 4: Bento UI (Bento Grids)**
-
-Bento UI, also known as Bento grids, are small, mosaic-like layouts that allow designers to showcase information on a website or product sheet. The video notes that this trend is popular among large and small companies, including Apple, as it enables users to consume information quickly and easily.
-
-**Trend 5: Gradients and Glows**
-
-The video highlights the resurgence of gradients and glows in web design, which is made possible by advancements in screen technology. Gradients and glows can add depth and vibrancy to a website, making it more engaging and modern. The video showcases examples of websites that have successfully incorporated these design elements, making them stand out from the crowd.
-
-Overall, the video emphasizes the importance of staying up-to-date with the latest web design trends to create engaging, polished, and professional-looking websites that appeal to users.
+The video concludes with the developer summarizing their approach to writing clean code in React, which involves delegating responsibilities to smaller components and using custom hooks and components to make the code more scalable and reusable.
