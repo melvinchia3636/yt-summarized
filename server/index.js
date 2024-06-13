@@ -1,4 +1,4 @@
-require('dotenv').config({ path: require('find-config')('.env') })
+require("dotenv").config({ path: require("find-config")(".env") });
 const express = require("express");
 const cors = require("cors");
 const { exec } = require("child_process");
@@ -96,3 +96,5 @@ async function generateSummary(transcript) {
 app.listen(port, () => {
   console.log(`Express server running on http://localhost:${port}`);
 });
+
+module.exports = app;
