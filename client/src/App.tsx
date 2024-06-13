@@ -15,7 +15,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/yt-video-summary",
+        "https://youtube-summarize-api.vercel.app/api/yt-video-summary",
         { videoURL }
       );
       setSummary(response.data.summary);
